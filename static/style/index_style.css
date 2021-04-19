@@ -4,7 +4,14 @@
 }
 
 .main{
-	width: 70%;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+}
+
+.t-shirt{
+	width: 20%;
+	height: 20%;
 }
 
 footer{
