@@ -1,15 +1,11 @@
-{% extends 'index.html' %}
-{% block title %}
-	Panik Ztation
-{% endblock %}
-{% block style%}
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/home_style.css') }}">
-{% endblock %}
-{% block script %}
-{% endblock %}
-{% block content %}
-<p style="text-align: center; color: white; font-size: 20px; font-family:'Droid Sans Mono',monospace;">Seleccione la camiseta del color que desee</p>
-<!--this beautifull content was taken from https://codepen.io/ongtiffany/pen/PPbPyB-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Panik Ztation</title>
+	<link rel="stylesheet" type="text/css" href="static/style/home_style.css">
+</head>
+<body>
+	<p style="text-align: center; color: white; font-size: 20px; font-family:'Droid Sans Mono',monospace;">Seleccione la camiseta del color que desee</p>
 	<div id="gallerywrapper">
 	    <div id="gallery">
 		    <div id="pic1">
@@ -39,5 +35,5 @@
 		    </div>
 	    </div>
 	</div>
-<!--until here-->
-{% endblock %}
+</body>
+</html>
