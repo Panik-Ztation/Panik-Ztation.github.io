@@ -25,21 +25,37 @@
             <img src="static/imgs/icon.png" width="50" height="50" style="border-radius: 10px;" class="d-inline-block align-top" id="nav-logo" alt="">
           </a>
           <ul class="nav navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href=" {{ url_for('order') }} ">Ordenar!</a>
-            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link" href="#">Ordenar!</a>
+            </li>-->
+            <div style="text-align: left;" class="langWrap">
+              <a class="active" href="#" language="english">EN</a>
+              <a href="#" language="spanish">ES</a>
+            </div>
           </ul>
         </nav>
       </header>
       <div class="main">
-        <a href="home.html">
+        <div class="hoodies">
+          <h1 class="hoodie">Hoodies</h1>
+          <img class="t-shirt" src="static/imgs/products/raccoon hoodie.png">
+          <img class="t-shirt" src="static/imgs/products/sad avocado hoodie.png">
+          <img class="t-shirt" src="static/imgs/products/yoshi hoodie.png">
+          <img class="t-shirt" src="static/imgs/products/toxic hoodie.png">
+        </div>
+        <div class="t-shirts">
+          <h1 class="tshirt">Tshirts</h1>
+          <img class="t-shirt" src="static/imgs/products/dorime white.png">
+          <a href="home.html">
           <img class="t-shirt" src="static/imgs/products/black tshirt stand the dark lord.png">
         </a>
-        <img class="t-shirt" src="static/imgs/products/dorime white.png">
-        <img class="t-shirt" src="static/imgs/products/raccoon hoodie.png">
-        <img class="t-shirt" src="static/imgs/products/sad avocado hoodie.png">
-        <img class="t-shirt" src="static/imgs/products/yoshi hoodie.png">
-        <img class="t-shirt" src="static/imgs/products/toxic hoodie.png">
+        </div>
+        <div class="caps">
+          <h1 class="cap">Caps</h1>
+        </div>
+        <div class="mugs">
+          <h1 class="mug">Mugs</h1>
+        </div>
       </div>
       <footer/>
         contacto: panik.ztation@gmail.com
@@ -50,5 +66,48 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript">
+      const langE1 =document.querySelector('.langWrap')
+      const link =document.querySelectorAll('a')
+      const titleE1 =document.querySelector('.title')
+      const hoodie =document.querySelector('.hoodie')
+      const tshirt =document.querySelector('.tshirt')
+      const cap =document.querySelector('.cap')
+      const mug =document.querySelector('.mug')
+
+      link.forEach(el => {
+        el.addEventListener('click', () => {
+          langE1.querySelector('.active').classList.remove('active');
+          el.classList.add('active');
+
+          const attr = el.getAttribute('language');
+
+          console.log(attr)
+          console.log(data[attr].hoodie)
+
+          hoodie.innerHTML = data[attr].hoodie;
+          tshirt.innerHTML = data[attr].tshirt;
+          cap.innerHTML = data[attr].cap;
+          mug.innerHTML = data[attr].mug;
+        });
+      });
+
+      var data = {
+        "english":{
+          "hoodie":"Hoodies",
+          "tshirt":"Tshirts",
+          "cap":"Caps",
+          "mug":"Mugs"
+        },
+        "spanish":{
+          "hoodie":"Buzos",
+          "tshirt":"Camisetas",
+          "cap":"Gorras",
+          "mug":"Vasos"
+        }
+      }
+    </script>
 </body>
 </html>
+
+
