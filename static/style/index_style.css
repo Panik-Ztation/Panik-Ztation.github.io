@@ -1,3 +1,7 @@
+h1{
+    color: #f6e5e9;
+}
+
 .contenedor{
 	width: 100%;
 	max-width: 1400px;
@@ -21,8 +25,8 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background: #000;
-    color: #C6C6C6;
+    background: #4a1c40;
+    color: #f6e5e9;
     text-align: center;
     padding-bottom: 0px;
 }
