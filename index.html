@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- Paleta de colores original tomada de: https://colorhunt.co/palette/281672 -->
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="static/style/index_style.css">
     <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <link rel="icon" href="static/imgs/icon.png" type="image/png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Paleta de colores original tomada de: https://colorhunt.co/palette/281672 -->
     <style type="text/css">
       body{
         background-color: #962d2d;
@@ -20,18 +20,14 @@
   </head>
   <body>
     <div class="contenedor">
-      <header style="background: #4a1c40;">
-        <nav>
-          <img src="static/imgs/icon.png" width="50" height="50" style="border-radius: 10px;" class="d-inline-block align-top" id="nav-logo" alt="">
-          <ul class="nav navbar-nav">
-            <!--<li class="nav-item">
-              <a class="nav-link" href="#">Ordenar!</a>
-            </li>-->
-            <div style="text-align: right; margin-right: 5px;" class="langWrap">
-              <a class="active" href="#" language="english">EN</a>
-              <a href="#" language="spanish">ES</a>
-            </div>
-          </ul>
+      <header style="background: #4A1C40;">
+        <nav style="display: flex;">
+          <img src="static/imgs/icon.png" width="50" height="50" 
+          style="border-radius: 10px;" class="d-inline-block align-top" id="nav-logo" alt="">
+          <div style="padding-left: 10px;margin-top: 12px;" class="langWrap">
+            <a class="active" href="#" language="english">EN</a>
+            <a href="#" language="spanish">ES</a>
+          </div>
         </nav>
       </header>
       <div class="main">
@@ -64,14 +60,6 @@
           </a>
         </div>
       </div>
-      <!--<footer/>
-        contacto: panik.ztation@gmail.com
-        <div class="middle">
-          <a class="btn" href="https://www.instagram.com/panik.ztation/" target="blank" >
-            <img name="insta-logo" src="static/imgs/insta logo 2.png" style="width: 30px; height: 30px">
-          </a>
-        </div>
-      </footer>-->
     </div>
     <script type="text/javascript">
       const langE1 =document.querySelector('.langWrap')
