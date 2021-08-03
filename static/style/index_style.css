@@ -1,6 +1,32 @@
 h1{
     color: #F6E5E9;
-    padding: 20px;
+    padding: 2%;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background: #4A1C40;
+    padding: 10px;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #BC4E82;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #347180;
+    border-radius: 50px;
+}
+
+.h-nav{
+    display: flex;
 }
 
 .contenedor{
@@ -19,9 +45,30 @@ h1{
 	height: 15%;
 }
 
+.hoodie{
+    width: 15%;
+    height: 15%;
+}
+
+.logo{
+    border-radius: 10px;
+    width: 4%;
+    height: 4%;
+}
+
+.insta-logo{
+    width: 7%;
+    height: 7%;
+}
+
+.langWrap{
+    padding-left: 1%;
+    margin-top: 1%;
+}
+
 .footer{
     font-family:'Droid Sans Mono',monospace;
-    font-size: 20px;
+    font-size: 110%;
     position: fixed;
     left: 0;
     bottom: 0;
